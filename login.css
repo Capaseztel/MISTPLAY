@@ -1,0 +1,127 @@
+main {
+    background-color: black;
+    background-image: url("img/section1.jpg");
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 3;
+    margin-inline: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form section {
+    flex-direction: row;
+}
+
+input {
+    width: 350px;
+    height: 48px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    border: none;
+    border-bottom: 2px solid #7D93F9;
+    outline: none;
+    transition: all 0.2s ease 0s;
+    color: #7D93F9;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.submit {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #7D93F9;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+input::placeholder {
+    color: #7D93F9;
+}
+
+input:focus {
+    background-color: #212741;
+}
+
+div {
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 100%;
+}
+
+#atras {
+    color: #7D93F9;
+    background-color: #1E1E1E;
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 20px;
+    z-index: 4;
+}
+
+@media only screen and (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+    label {
+        font-size: 3vw;
+    }
+    section {
+        width: 80%;
+    }
+}
