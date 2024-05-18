@@ -3,7 +3,7 @@ main {
     background-image: url("img/section1.jpg");
     background-size: cover;
     color: white;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@ div {
     backdrop-filter: blur(10px);
     top: 0;
     left: 0;
-    height: 110%;
+    height: 135%;
     width: 100%;
 }
 
@@ -126,26 +126,80 @@ div {
     padding: 0px;
 }
 
-.pass-field input {
+.pass-field input, .pass-field2 input {
     width: 350px;
     margin: 0px 0px;
 }
-.pass-field {
+
+.pass-field, .pass-field2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+.pass-field, .pass-field2 {
     margin: 0px;
     padding: 0px;
 }
-.pass-field i {
+.pass-field i, .pass-field2 i {
     font-size: 1.2rem;
     color: black;
     cursor: pointer;
     position: absolute;
     transform: translatex(160px);
 }
-
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+.content p {
+    color: white;
+    font-size: 1.3rem;
+}
+.content .requirement-list {
+    margin-top: 20px;
+}
+.requirement-list li {
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.requirement-list li i {
+    width: 20px;
+    color: #aaa;
+    font-size: 0.6rem;
+}
+.requirement-list li.valid i {
+    font-size: 0.5rem;
+    color: #4285F4;
+}
+.requirement-list li span {
+    margin-left: 12px;
+}
+.requirement-list li.valid span {
+    color: #999;
+}
+.valid {
+    color: lime;
+}
 @media only screen and (max-width: 600px) {
     input {
         width: 90%;
@@ -155,5 +209,26 @@ div {
     }
     section {
         width: 80%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .content {
+        width: 70%;
+    }
+    .pass-field i, .pass-field2 i {
+        transform: translatex(25vw);
+    }
+    .pass-field, .pass-field2 {
+        width: 100%;
+    }
+    .pass-field input, .pass-field2 input {
+        width: 89%;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    .content ul li span {
+        font-size: 0.8rem;
     }
 }
