@@ -3,7 +3,7 @@ main {
     background-image: url("img/section1.jpg");
     background-size: cover;
     color: white;
-    height: 130vh;
+    height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@ div {
     backdrop-filter: blur(10px);
     top: 0;
     left: 0;
-    height: 135%;
+    height: 155%;
     width: 100%;
 }
 
@@ -189,18 +189,21 @@ div {
 }
 .requirement-list li.valid i {
     font-size: 0.5rem;
-    color: #4285F4;
+    color: lime;
 }
 .requirement-list li span {
     margin-left: 12px;
 }
 .requirement-list li.valid span {
-    color: #999;
-}
-.valid {
-    color: lime;
+    color: #e1f9e1;
 }
 @media only screen and (max-width: 600px) {
+    main {
+        height: 200vh;
+    }
+    div {
+        height: 205%;
+    }
     input {
         width: 90%;
     }
@@ -230,5 +233,14 @@ div {
     }
     .content ul li span {
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    main {
+        height: 250vh;
+    }
+    div {
+        height: 255%;
     }
 }
