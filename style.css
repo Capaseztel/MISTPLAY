@@ -442,11 +442,13 @@ footer h2 {
 footer p {
     font-size: 15px;
     margin-bottom: 20px;
+    z-index: 10;
 }
 
 footer ul {
     display: flex;
     list-style: none;
+    z-index: 10;
 }
 
 footer ul li {

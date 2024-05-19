@@ -202,7 +202,7 @@ div {
         height: 200vh;
     }
     div {
-        height: 205%;
+        height: 215%;
     }
     input {
         width: 90%;
@@ -236,11 +236,13 @@ div {
     }
 }
 
-@media only screen and (max-height: 600px) {
+
+
+@media only screen and (max-height: 500px) {
     main {
-        height: 250vh;
+        height: 230vh;
     }
     div {
-        height: 255%;
+        height: 245%;
     }
 }
